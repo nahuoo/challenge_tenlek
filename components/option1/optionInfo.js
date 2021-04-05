@@ -11,7 +11,7 @@ export const OptionInfo = () => {
     <Background>
       <Menu />
       <Card>
-        Presion Directa: <p>{apiData['Presion Directa']}</p>
+        Presion Directa: <hr /><p>{apiData['Presion Directa']}</p>
       </Card>
     </Background>
   )
