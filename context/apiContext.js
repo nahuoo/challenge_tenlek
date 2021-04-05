@@ -29,8 +29,12 @@ export const ApiDataProvider = ({ children }) => {
     return () => clearInterval(interval)
   }, [])
 
+  const toggleMenu = () => {
+    dispatch({ type: actions.CLOSE_MENU })
+  }
   const value = {
     ...state,
+    toggleMenu,
   }
 
   return <apiContext.Provider value={value}>{children}</apiContext.Provider>

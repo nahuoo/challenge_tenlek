@@ -2,12 +2,14 @@ import React, { useContext } from 'react'
 import { Background, Wrapper } from '../../styles/styledBackground'
 import { apiContext } from '../../context/apiContext'
 import { Card } from './styledImages'
+import { Menu } from '..//menu/menu'
 
 export const OptionImages = () => {
   const { apiData } = useContext(apiContext)
 
   return (
     <Background>
+      <Menu />
       <Wrapper>
         <Card>
           Presion Directa: <p>{apiData['Presion Directa']}</p>

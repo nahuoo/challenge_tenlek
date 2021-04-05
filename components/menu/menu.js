@@ -1,26 +1,21 @@
-import React, { useState } from 'react'
+import React, { useContext } from 'react'
 import { Button, Card, MenuContainer } from './styledMenu'
+import { apiContext } from '../../context/apiContext'
 import Link from 'next/link'
 
-
 export const Menu = () => {
-  const [toogle, setToogle] = useState(false)
-
- 
-  const handleButton = () => {
-    setToogle(true)
-  }
+    const { toggleMenu, activeMenu } = useContext(apiContext)
 
   return (
-    <MenuContainer toogle={toogle} >
+    <MenuContainer toogle={activeMenu}>
       <Card>
-        <Link href="/info" style={{ textDecoration: 'none' }} onClick={handleButton}>
-          <Button>Opción 1</Button>
+        <Link href="/info" style={{ textDecoration: 'none' }}>
+          <Button onClick={toggleMenu}>Opción 1</Button>
         </Link>
       </Card>
       <Card>
-        <Link href="/images" style={{ textDecoration: 'none' }} onClick={handleButton}>
-          <Button>Opción 2</Button>
+        <Link href="/images" style={{ textDecoration: 'none' }}>
+          <Button onClick={toggleMenu}>Opción 2</Button>
         </Link>
       </Card>
     </MenuContainer>

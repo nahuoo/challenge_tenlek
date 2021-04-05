@@ -2,7 +2,7 @@ export const initialState = {
     error: '',
     isFetching: true,
     apiData: {},
-    toogleMenu: false,
+    activeMenu: false,
   }
   
   export const actions = {
@@ -17,7 +17,7 @@ export const initialState = {
         return {
           ...state,
           ...action.payload,
-          toogleMenu: true,
+          activeMenu: true,
         }
       case actions.FETCH_DATA:
         return {
