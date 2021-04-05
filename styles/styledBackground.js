@@ -13,9 +13,9 @@ export const Background = styled.div`
 export const Wrapper = styled.div`
   display: grid;
   padding: 1rem;
-  grid-template-columns: minmax(20%, 50%) minmax(20%, 50%);
-  grid-template-rows: 1fr 1fr 1fr;
-  gap: 20px 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 0px 20px;
   align-items: center;
   justify-items: center;
   transition: 0.2s ease-in;

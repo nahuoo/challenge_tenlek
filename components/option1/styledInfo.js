@@ -12,7 +12,7 @@ export const Card = styled.p`
   padding-top: 1rem;
 
   @media (max-width: 600px) {
-    height: 10%;
-    width: 30%;
+    height: 15%;
+    width: 40%;
   }
 `

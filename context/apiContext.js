@@ -20,7 +20,8 @@ export const ApiDataProvider = ({ children }) => {
         })
         .catch((e) => {
           dispatch({
-            
+            type: actions.SET_ERROR,
+            payload: { error: 'Error interno' },
           })
         })
     }, 1000)
