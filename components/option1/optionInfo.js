@@ -1,5 +1,5 @@
 import React, { useContext } from 'react'
-import { Background  } from '../../assets/styledBackground'
+import { Background  } from '../../styles/styledBackground'
 import { apiContext } from '../../context/apiContext'
 import { Card } from './styledInfo'
 

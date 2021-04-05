@@ -1,9 +1,9 @@
 import React, { useContext } from 'react'
-import { Background, Wrapper } from '../../assets/styledBackground'
+import { Background, Wrapper } from '../../styles/styledBackground'
 import { apiContext } from '../../context/apiContext'
-import { Card } from './styledImage'
+import { Card } from './styledImages'
 
-export const OptionImage = () => {
+export const OptionImages = () => {
   const { apiData } = useContext(apiContext)
 
   return (
